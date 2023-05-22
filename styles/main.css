@@ -1,0 +1,147 @@
+body.dark {
+  background: #20222f;
+  color: white;
+}
+body.dark .overview-today {
+  color: white;
+}
+body.dark .overview-card {
+  background-color: #252b43;
+}
+body.dark .overview-card .page-views {
+  color: #767ca0;
+}
+body.dark .info-card {
+  background-color: #252b43;
+}
+body.dark .instagram-card {
+  background: linear-gradient(#252b43, #252b43) padding-box, linear-gradient(to right, #fec470, #f38381, #e04f94) border-box;
+}
+body.dark .info-card:hover {
+  cursor: pointer;
+  background: linear-gradient(#333a56, #333a56) padding-box, linear-gradient(to right, #fec470, #f38381, #e04f94) border-box;
+}
+body.dark .header-text h2 {
+  color: #767ca0;
+}
+body.dark .followers-username {
+  color: #767ca0;
+}
+body.dark .followers-desc {
+  color: #767ca0;
+}
+
+.perc-div.green-color * {
+  color: #18b387;
+}
+.perc-div.red-color * {
+  color: #de5066;
+}
+
+.overview-today {
+  color: #5d606f;
+  font-weight: bold;
+}
+
+.header-text h1 {
+  font-size: 40px;
+}
+.header-text h2 {
+  font-size: 14px;
+  color: #5d606f;
+  font-weight: 600;
+}
+
+#theme-switch-wrapper .checkbox {
+  opacity: 0;
+  position: absolute;
+}
+#theme-switch-wrapper .label {
+  background-image: linear-gradient(to right, #3a97da, #3ecf8e);
+  border-radius: 50px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 5px;
+  position: relative;
+  height: 26px;
+  width: 50px;
+}
+#theme-switch-wrapper .label .ball {
+  background-color: #fff;
+  border-radius: 50%;
+  position: absolute;
+  top: 2px;
+  left: 3px;
+  height: 22px;
+  width: 22px;
+  transform: translateX(0px);
+  transition: transform 0.2s linear;
+}
+#theme-switch-wrapper .checkbox:checked + .label .ball {
+  transform: translateX(22px);
+}
+
+.overview-card {
+  background-color: #F0F3Fa;
+  border-top: 4px solid transparent;
+  border-radius: 3px;
+}
+
+.info-card {
+  background-color: #F0F3Fa;
+  border-top: 4px solid transparent;
+  border-radius: 3px;
+}
+
+.info-card:hover {
+  cursor: pointer;
+  background: linear-gradient(#e1e3f0, #e1e3f0) padding-box, linear-gradient(to right, #fec470, #f38381, #e04f94) border-box;
+}
+
+.facebook-card {
+  border-color: #168ffa;
+}
+
+.twitter-card {
+  border-color: #1da3ed;
+}
+
+.instagram-card {
+  background: linear-gradient(#F0F3Fa, #F0F3Fa) padding-box, linear-gradient(to right, #fec470, #f38381, #e04f94) border-box;
+}
+
+.youtube-card {
+  border-color: #c6032b;
+}
+
+.website-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.followers-username {
+  color: #5d606f;
+  font-weight: 500;
+}
+
+.followers-count {
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.followers-desc {
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  color: #5d606f;
+}
+
+.today-wrapper {
+  color: #18b387;
+}
+.today-wrapper h3 {
+  margin: 0px;
+  font-size: 12px;
+  font-weight: bold;
+}/*# sourceMappingURL=main.css.map */

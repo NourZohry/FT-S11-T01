@@ -1,0 +1,196 @@
+$card-bg: #F0F3Fa;
+$card-bg-hover: #e1e3f0;
+$card-text: #5d606f;
+$facebook-color: #168ffa;
+$twitter-color: #1da3ed;
+$instagram-color-1: #fec470;
+$instagram-color-2: #f38381;
+$instagram-color-3: #e04f94;
+$youtube-color: #c6032b;
+$increase-text: #18b387;
+$decrease-text: #de5066;
+
+$dark-body-bg: #20222f;
+$dark-card-bg: #252b43;
+$dark-card-bg-hover: #333a56;
+$dark-card-text: #767ca0;
+
+
+
+
+
+
+
+
+
+body.dark {
+    background: $dark-body-bg;
+    color: white;
+
+    .overview-today {
+        color: white;
+    }
+    .overview-card {
+        background-color: $dark-card-bg;
+        .page-views {
+            color: $dark-card-text;
+        }
+    }
+
+    .info-card {
+        background-color: $dark-card-bg;
+    }
+    .instagram-card {
+        background: linear-gradient($dark-card-bg, $dark-card-bg) padding-box,
+        linear-gradient(to right, $instagram-color-1, $instagram-color-2, $instagram-color-3) border-box;
+    }
+    .info-card:hover {
+        cursor: pointer;
+        background: linear-gradient($dark-card-bg-hover, $dark-card-bg-hover) padding-box,
+        linear-gradient(to right, $instagram-color-1, $instagram-color-2, $instagram-color-3) border-box;
+    }
+    .header-text {
+        h2 {
+            color: $dark-card-text;
+        }
+    }
+    .followers-username {
+        color: $dark-card-text;
+    }
+    .followers-desc {
+        color: $dark-card-text;
+    }
+
+}
+
+.perc-div {
+    &.green-color {
+        * {
+            color: $increase-text;
+        }
+    }
+    &.red-color {
+        * {
+            color: $decrease-text;
+        }
+    }
+}
+
+.overview-today {
+    color: $card-text;
+    font-weight: bold;
+}
+
+.header-text {
+    h1 {
+        font-size: 40px;
+    }
+    h2 {
+        font-size: 14px;
+        color: $card-text;
+        font-weight: 600;
+    }
+}
+
+#theme-switch-wrapper{
+    .checkbox {
+        opacity: 0;
+        position: absolute;
+    }
+
+    .label {
+        background-image: linear-gradient(to right, #3a97da, #3ecf8e);
+        border-radius: 50px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 5px;
+        position: relative;
+        height: 26px;
+        width: 50px;
+    }
+
+    .label .ball {
+        background-color: #fff;
+        border-radius: 50%;
+        position: absolute;
+        top: 2px;
+        left: 3px;
+        height: 22px;
+        width: 22px;
+        transform: translateX(0px);
+        transition: transform 0.2s linear;
+    }
+
+    .checkbox:checked + .label .ball {
+        transform: translateX(22px);
+    }
+}
+
+.overview-card {
+    background-color: $card-bg;
+    border-top: 4px solid transparent;
+    border-radius: 3px;
+}
+
+.info-card {
+    background-color: $card-bg;
+    border-top: 4px solid transparent;
+    border-radius: 3px;
+}
+
+.info-card:hover {
+    cursor: pointer;
+    background: linear-gradient($card-bg-hover, $card-bg-hover) padding-box,
+    linear-gradient(to right, $instagram-color-1, $instagram-color-2, $instagram-color-3) border-box;
+
+
+}
+
+.facebook-card {
+    border-color: $facebook-color;
+}
+
+.twitter-card {
+    border-color: $twitter-color;
+}
+
+.instagram-card {
+    background: linear-gradient($card-bg, $card-bg) padding-box,
+    linear-gradient(to right, $instagram-color-1, $instagram-color-2, $instagram-color-3) border-box;
+}
+
+.youtube-card {
+    border-color: $youtube-color;
+}
+
+.website-icon {
+    width: 20px;
+    height: 20px;
+}
+
+.followers-username {
+    color: $card-text;
+    font-weight: 500;
+}
+
+.followers-count {
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.followers-desc {
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: $card-text;
+}
+
+.today-wrapper {
+    color: $increase-text;
+    h3 {
+        margin: 0px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+}
